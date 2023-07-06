@@ -33,6 +33,11 @@ const DemoModal = ({
             Precedent is an opinionated collection of components, hooks, and
             utilities for your Next.js project.
           </p>
+          <input
+            className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-700 focus:border-gray-500 focus:border-gray-600 focus:outline-none"
+            type="text"
+            placeholder="Enter text..."
+          />
         </div>
       </div>
     </Modal>

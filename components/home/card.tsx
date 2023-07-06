@@ -24,7 +24,7 @@ export default function Card({
         <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
           <Balancer>{title}</Balancer>
         </h2>
-        <div className="prose-sm -mt-2 leading-normal text-gray-500 md:prose">
+        <div className="prose-sm -mb-2 -mt-2 leading-normal text-gray-500 md:prose">
           <Balancer>
             <ReactMarkdown
               components={{

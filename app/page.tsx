@@ -33,27 +33,32 @@ export default async function Home() {
           rel="noreferrer"
           className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
-          <Twitter className="h-5 w-5 text-[#1d9bf0]" />
+          {/* <Twitter className="h-5 w-5 text-[#1d9bf0]" /> */}
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            Introducing Precedent
+            Introducing Advert.ai
           </p>
         </a>
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-6xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          <Balancer>Building blocks for your Next project</Balancer>
+          {/* <Balancer>Building blocks for your Next project</Balancer> */}
+          <Balancer>Get a complete marketing campaign in minutes</Balancer>
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          <Balancer>
+          {/* <Balancer>
             An opinionated collection of components, hooks, and utilities for
             your Next.js project.
+          </Balancer> */}
+          <Balancer>
+            A step by step guide to create your marketing campaign with the
+            power of AI
           </Balancer>
         </p>
-        <div
+        {/* <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
@@ -91,7 +96,7 @@ export default async function Home() {
               <span className="font-semibold">{nFormatter(stars)}</span>
             </p>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large }) => (
@@ -100,11 +105,7 @@ export default async function Home() {
             title={title}
             description={description}
             demo={
-              title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
-              ) : (
-                demo
-              )
+              title === "Fast, Innovative, Engaging" ? <ComponentGrid /> : demo
             }
             large={large}
           />
@@ -116,9 +117,10 @@ export default async function Home() {
 
 const features = [
   {
-    title: "Beautiful, reusable components",
+    title: "Fast, Innovative, Engaging",
     description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)",
+      "Experience the power of cutting-edge AI technology as our fast, innovative bot creates engaging and impactful marketing campaigns.",
+    // "Experience the power of cutting-edge AI technology as our fast, innovative bot creates engaging and impactful marketing campaigns. Stay ahead of the competition and unlock new levels of success with our revolutionary automated marketing solution.",
     large: true,
   },
   {
@@ -127,46 +129,46 @@ const features = [
       "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
     demo: <WebVitals />,
   },
-  {
-    title: "One-click Deploy",
-    description:
-      "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
-    demo: (
-      <a href={DEPLOY_URL}>
-        <Image
-          src="https://vercel.com/button"
-          alt="Deploy with Vercel"
-          width={120}
-          height={30}
-          unoptimized
-        />
-      </a>
-    ),
-  },
-  {
-    title: "Built-in Auth + Database",
-    description:
-      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
-        <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
-      </div>
-    ),
-  },
-  {
-    title: "Hooks, utilities, and more",
-    description:
-      "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
-    demo: (
-      <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
-        <span className="font-mono font-semibold">useIntersectionObserver</span>
-        <span className="font-mono font-semibold">useLocalStorage</span>
-        <span className="font-mono font-semibold">useScroll</span>
-        <span className="font-mono font-semibold">nFormatter</span>
-        <span className="font-mono font-semibold">capitalize</span>
-        <span className="font-mono font-semibold">truncate</span>
-      </div>
-    ),
-  },
+  // {
+  //   title: "One-click Deploy",
+  //   description:
+  //     "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
+  //   demo: (
+  //     <a href={DEPLOY_URL}>
+  //       <Image
+  //         src="https://vercel.com/button"
+  //         alt="Deploy with Vercel"
+  //         width={120}
+  //         height={30}
+  //         unoptimized
+  //       />
+  //     </a>
+  //   ),
+  // },
+  // {
+  //   title: "Built-in Auth + Database",
+  //   description:
+  //     "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
+  //   demo: (
+  //     <div className="flex items-center justify-center space-x-20">
+  //       <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
+  //       <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   title: "Hooks, utilities, and more",
+  //   description:
+  //     "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
+  //   demo: (
+  //     <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
+  //       <span className="font-mono font-semibold">useIntersectionObserver</span>
+  //       <span className="font-mono font-semibold">useLocalStorage</span>
+  //       <span className="font-mono font-semibold">useScroll</span>
+  //       <span className="font-mono font-semibold">nFormatter</span>
+  //       <span className="font-mono font-semibold">capitalize</span>
+  //       <span className="font-mono font-semibold">truncate</span>
+  //     </div>
+  //   ),
+  // },
 ];
